@@ -3,7 +3,7 @@ import sys, os
 
 version = '0.0'
 
-setup(name='bench',
+setup(name='evbench',
       version=version,
       description="Bench mark tool built on eventlet",
       long_description="""\
@@ -12,13 +12,14 @@ setup(name='bench',
       keywords='',
       author='Ben Ford',
       author_email='ben@bothead.co.uk',
-      url='http://github.com/boothead/bench',
+      url='http://github.com/boothead/evbench',
       license='BSD',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
+          "eventlet",
       ],
       entry_points="""
       # -*- Entry points: -*-
